@@ -7,5 +7,16 @@
   "getStarted": "ابدأ مع حقوق",
   "splashAppTitle" : "القانون المصري، ببساطة",
   "splashBody" : "معرفة أوضح.\nخطوة أَوْعى.",
-  "splashFooter" : "مساعدك لفهم حقوقك في مصر"
+  "splashFooter" : "مساعدك لفهم حقوقك في مصر",
+  "onboardingAppBar" : "أهلًا بيك في حقوق",
+  "onboardingTitle": "حقك تفهم،\nقبل ما تاخد خطوة.",
+  "onboardingDescrption" : "معلومات قانونية مصرية بلغة واضحة، تساعدك ترتّب أفكارك وتعرف تبدأ منين.",
+  "onboardingLawTitle" : "القانون المصري وبس",
+  "onboardingLawDescription" : "الشغل، الإيجار، الأسرة، العقود وحقوق المستهلك في مصر.",
+  "onboardingSourceTitle" : "افهم الإجابة ومصدرها",
+  "onboardingSourceDescription" : "شرح بسيط ومراجع قانونية مصرية تقدر ترجع لها.",
+  "onboardingChatTitle" : "اسأل بطريقتك",
+  "onboardingChatDescription" : "احكي الموقف من غير أسماء أو بيانات شخصية حساسة.",
+  "onboardingWarning" : "حقوق بيقدّم معلومات عامة، مش استشارة قانونية ولا بديل عن محامي مصري يراجع تفاصيل حالتك.",
+  "onboardingLogin" : "عندك حساب؟ تسجيل الدخول"
 }

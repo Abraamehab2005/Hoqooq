@@ -28,4 +28,42 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get splashFooter => 'مساعدك لفهم حقوقك في مصر';
+
+  @override
+  String get onboardingAppBar => 'أهلًا بيك في حقوق';
+
+  @override
+  String get onboardingTitle => 'حقك تفهم،\nقبل ما تاخد خطوة.';
+
+  @override
+  String get onboardingDescrption =>
+      'معلومات قانونية مصرية بلغة واضحة، تساعدك ترتّب أفكارك وتعرف تبدأ منين.';
+
+  @override
+  String get onboardingLawTitle => 'القانون المصري وبس';
+
+  @override
+  String get onboardingLawDescription =>
+      'الشغل، الإيجار، الأسرة، العقود وحقوق المستهلك في مصر.';
+
+  @override
+  String get onboardingSourceTitle => 'افهم الإجابة ومصدرها';
+
+  @override
+  String get onboardingSourceDescription =>
+      'شرح بسيط ومراجع قانونية مصرية تقدر ترجع لها.';
+
+  @override
+  String get onboardingChatTitle => 'اسأل بطريقتك';
+
+  @override
+  String get onboardingChatDescription =>
+      'احكي الموقف من غير أسماء أو بيانات شخصية حساسة.';
+
+  @override
+  String get onboardingWarning =>
+      'حقوق بيقدّم معلومات عامة، مش استشارة قانونية ولا بديل عن محامي مصري يراجع تفاصيل حالتك.';
+
+  @override
+  String get onboardingLogin => 'عندك حساب؟ تسجيل الدخول';
 }

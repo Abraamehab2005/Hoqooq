@@ -135,6 +135,72 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'مساعدك لفهم حقوقك في مصر'**
   String get splashFooter;
+
+  /// No description provided for @onboardingAppBar.
+  ///
+  /// In ar, this message translates to:
+  /// **'أهلًا بيك في حقوق'**
+  String get onboardingAppBar;
+
+  /// No description provided for @onboardingTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'حقك تفهم،\nقبل ما تاخد خطوة.'**
+  String get onboardingTitle;
+
+  /// No description provided for @onboardingDescrption.
+  ///
+  /// In ar, this message translates to:
+  /// **'معلومات قانونية مصرية بلغة واضحة، تساعدك ترتّب أفكارك وتعرف تبدأ منين.'**
+  String get onboardingDescrption;
+
+  /// No description provided for @onboardingLawTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'القانون المصري وبس'**
+  String get onboardingLawTitle;
+
+  /// No description provided for @onboardingLawDescription.
+  ///
+  /// In ar, this message translates to:
+  /// **'الشغل، الإيجار، الأسرة، العقود وحقوق المستهلك في مصر.'**
+  String get onboardingLawDescription;
+
+  /// No description provided for @onboardingSourceTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'افهم الإجابة ومصدرها'**
+  String get onboardingSourceTitle;
+
+  /// No description provided for @onboardingSourceDescription.
+  ///
+  /// In ar, this message translates to:
+  /// **'شرح بسيط ومراجع قانونية مصرية تقدر ترجع لها.'**
+  String get onboardingSourceDescription;
+
+  /// No description provided for @onboardingChatTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'اسأل بطريقتك'**
+  String get onboardingChatTitle;
+
+  /// No description provided for @onboardingChatDescription.
+  ///
+  /// In ar, this message translates to:
+  /// **'احكي الموقف من غير أسماء أو بيانات شخصية حساسة.'**
+  String get onboardingChatDescription;
+
+  /// No description provided for @onboardingWarning.
+  ///
+  /// In ar, this message translates to:
+  /// **'حقوق بيقدّم معلومات عامة، مش استشارة قانونية ولا بديل عن محامي مصري يراجع تفاصيل حالتك.'**
+  String get onboardingWarning;
+
+  /// No description provided for @onboardingLogin.
+  ///
+  /// In ar, this message translates to:
+  /// **'عندك حساب؟ تسجيل الدخول'**
+  String get onboardingLogin;
 }
 
 class _AppLocalizationsDelegate
