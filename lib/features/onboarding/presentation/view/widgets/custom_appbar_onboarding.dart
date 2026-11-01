@@ -10,21 +10,31 @@ class CustomAppbarOnboarding extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
 
     return SizedBox(
-      height: 48,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          Center(
-            child: Text(
-              l10n.onboardingAppBar,
-              style: AppTextStyles.onboardingAppBar,
+      height: 64,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            Center(
+              child: Text(
+                l10n.onboardingAppBar,
+                style: AppTextStyles.onboardingAppBar,
+              ),
             ),
-          ),
-          Align(
-            alignment: Alignment.centerRight,
-            child: Text(l10n.appName, style: AppTextStyles.onboardingAppBar),
-          ),
-        ],
+            PositionedDirectional(
+              start: 0,
+              top: 0,
+              bottom: 0,
+              child: Center(
+                child: Text(
+                  l10n.appName,
+                  style: AppTextStyles.onboardingAppBar,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -10,19 +10,24 @@ class CustomOnboardingBody extends StatelessWidget {
     final l10n = AppLocalizations.of(context)!;
 
     return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Text(l10n.appName, style: AppTextStyles.onboardingBody),
-        const SizedBox(height: 22),
-        Align(
-          alignment: Alignment.centerRight,
+        Center(
           child: Text(
-            l10n.onboardingTitle,
-            style: AppTextStyles.onboardingBody,
+            l10n.appName,
+            style: AppTextStyles.onboardingBody.copyWith(height: 1.3),
           ),
         ),
         const SizedBox(height: 22),
         Text(
+          l10n.onboardingTitle,
+          textAlign: TextAlign.start,
+          style: AppTextStyles.onboardingBody,
+        ),
+        const SizedBox(height: 22),
+        Text(
           l10n.onboardingDescrption,
+          textAlign: TextAlign.start,
           style: AppTextStyles.onboardingDescrpion,
         ),
       ],

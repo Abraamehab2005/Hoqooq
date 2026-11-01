@@ -8,23 +8,24 @@ class CustomWarningOnboarding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context)!;
-    return Padding(
-      padding: const EdgeInsets.only(right: 6.0),
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(8),
+        border: Border.all(color: const Color(0xFFE5E1DA)),
+      ),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Image.asset("assets/images/warning.png", width: 18, height: 18),
-          const SizedBox(width: 14),
+          Image.asset('assets/images/warning.png', width: 18, height: 18),
+          const SizedBox(width: 10),
           Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  l10n.onboardingWarning,
-                  textAlign: TextAlign.right,
-                  style: AppTextStyles.onboardingLawSourceChatDescription,
-                ),
-              ],
+            child: Text(
+              l10n.onboardingWarning,
+              style: AppTextStyles.onboardingLawSourceChatDescription,
             ),
           ),
         ],

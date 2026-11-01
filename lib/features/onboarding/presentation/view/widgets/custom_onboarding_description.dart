@@ -15,24 +15,34 @@ class CustomOnboardingDescription extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final h = MediaQuery.sizeOf(context).height;
+    final isSmall = h < 700;
+
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.asset(image, width: 24, height: 24),
-        const SizedBox(width: 14),
+        Image.asset(
+          image,
+          width: isSmall ? 20 : 24,
+          height: isSmall ? 20 : 24,
+        ),
+        SizedBox(width: isSmall ? 10 : 14),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
             children: [
               Text(
                 title,
-                textAlign: TextAlign.right,
+                textAlign: TextAlign.start,
                 style: AppTextStyles.onboardingLawSourceChatTitle,
               ),
               const SizedBox(height: 4),
               Text(
                 description,
-                textAlign: TextAlign.right,
+                textAlign: TextAlign.start,
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
                 style: AppTextStyles.onboardingLawSourceChatDescription,
               ),
             ],

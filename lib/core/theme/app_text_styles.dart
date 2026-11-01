@@ -34,19 +34,23 @@ abstract class AppTextStyles {
     fontSize: 30,
     fontWeight: FontWeight.w600,
     color: AppColors.primary,
+    height: 1.5
   );
   static TextStyle get onboardingDescrpion => GoogleFonts.cairo(
     fontSize: 15,
     fontWeight: FontWeight.w400,
     color: AppColors.secondaryText,
+    height: 1.5
   );
   static TextStyle get onboardingLawSourceChatTitle => GoogleFonts.cairo(
     fontSize: 16,
     fontWeight: FontWeight.w600,
+    height: 1.5,
     color: AppColors.primary,
   );
   static TextStyle get onboardingLawSourceChatDescription => GoogleFonts.cairo(
     fontSize: 13,
+    height: 1.5,
     fontWeight: FontWeight.w400,
     color: AppColors.secondaryText,
   );
