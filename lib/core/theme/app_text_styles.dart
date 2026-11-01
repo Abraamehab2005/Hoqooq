@@ -25,4 +25,39 @@ abstract class AppTextStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.primary,
   );
+  static TextStyle get onboardingAppBar => GoogleFonts.cairo(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: AppColors.primary,
+  );
+  static TextStyle get onboardingBody => GoogleFonts.cairo(
+    fontSize: 30,
+    fontWeight: FontWeight.w600,
+    color: AppColors.primary,
+  );
+  static TextStyle get onboardingDescrpion => GoogleFonts.cairo(
+    fontSize: 15,
+    fontWeight: FontWeight.w400,
+    color: AppColors.secondaryText,
+  );
+  static TextStyle get onboardingLawSourceChatTitle => GoogleFonts.cairo(
+    fontSize: 16,
+    fontWeight: FontWeight.w600,
+    color: AppColors.primary,
+  );
+  static TextStyle get onboardingLawSourceChatDescription => GoogleFonts.cairo(
+    fontSize: 13,
+    fontWeight: FontWeight.w400,
+    color: AppColors.secondaryText,
+  );
+  static TextStyle get customButton => GoogleFonts.cairo(
+    fontSize: 15,
+    fontWeight: FontWeight.w600,
+    color: AppColors.surface,
+  );
+  static TextStyle get onboardingLogin => GoogleFonts.cairo(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.primary,
+  );
 }
