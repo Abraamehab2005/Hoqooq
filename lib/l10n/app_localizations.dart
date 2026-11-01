@@ -151,7 +151,7 @@ abstract class AppLocalizations {
   /// No description provided for @onboardingDescrption.
   ///
   /// In ar, this message translates to:
-  /// **'معلومات قانونية مصرية بلغة واضحة، تساعدك ترتّب أفكارك \nخطوةوتعرف تبدأ منين.'**
+  /// **'معلومات قانونية مصرية بلغة واضحة، تساعدك ترتّب أفكارك وتعرف تبدأ منين.'**
   String get onboardingDescrption;
 
   /// No description provided for @onboardingLawTitle.
@@ -193,7 +193,7 @@ abstract class AppLocalizations {
   /// No description provided for @onboardingWarning.
   ///
   /// In ar, this message translates to:
-  /// **'حقوق بيقدّم معلومات عامة، مش استشارة قانونية ولا\nخطوة بديل عن محامي مصري يراجع تفاصيل حالتك.'**
+  /// **'حقوق بيقدّم معلومات عامة، مش استشارة قانونية ولا بديل عن محامي مصري يراجع تفاصيل حالتك.'**
   String get onboardingWarning;
 
   /// No description provided for @onboardingLogin.

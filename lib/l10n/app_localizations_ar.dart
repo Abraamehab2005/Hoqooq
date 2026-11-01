@@ -37,7 +37,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get onboardingDescrption =>
-      'معلومات قانونية مصرية بلغة واضحة، تساعدك ترتّب أفكارك \nخطوةوتعرف تبدأ منين.';
+      'معلومات قانونية مصرية بلغة واضحة، تساعدك ترتّب أفكارك وتعرف تبدأ منين.';
 
   @override
   String get onboardingLawTitle => 'القانون المصري وبس';
@@ -62,7 +62,7 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get onboardingWarning =>
-      'حقوق بيقدّم معلومات عامة، مش استشارة قانونية ولا\nخطوة بديل عن محامي مصري يراجع تفاصيل حالتك.';
+      'حقوق بيقدّم معلومات عامة، مش استشارة قانونية ولا بديل عن محامي مصري يراجع تفاصيل حالتك.';
 
   @override
   String get onboardingLogin => 'عندك حساب؟ تسجيل الدخول';
