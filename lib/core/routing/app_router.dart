@@ -17,9 +17,14 @@ abstract class AppRouter {
       GoRoute(
         path: kOnboardingView,
         builder: (BuildContext context, GoRouterState state) {
-          return const OnboardingView(); 
+          return const OnboardingView();
         },
-      )
+      ),
+      GoRoute(
+        path: kHomeView,
+        builder: (context, state) =>
+            const Scaffold(body: Center(child: Text('Home'))),
+      ),
     ],
   );
 }
