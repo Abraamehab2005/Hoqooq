@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hoqooq/core/theme/app_text_styles.dart';
 import 'package:hoqooq/core/widgets/custom_button_field.dart';
 import 'package:hoqooq/features/onboarding/presentation/view/widgets/custom_appbar_onboarding.dart';
@@ -6,14 +7,13 @@ import 'package:hoqooq/features/onboarding/presentation/view/widgets/custom_icon
 import 'package:hoqooq/features/onboarding/presentation/view/widgets/custom_onboarding_body.dart';
 import 'package:hoqooq/features/onboarding/presentation/view/widgets/custom_onboarding_description.dart';
 import 'package:hoqooq/features/onboarding/presentation/view/widgets/custom_warning_onboarding.dart';
+import 'package:hoqooq/features/onboarding/presentation/view_model/onboarding_cubit.dart';
 import 'package:hoqooq/l10n/app_localizations.dart';
 
 class OnboardingViewBody extends StatelessWidget {
   const OnboardingViewBody({super.key});
 
   static const _divider = Color(0xFFE5E1DA);
-
-  // ارتفاع المحتوى في الديزاين (من الأيقونة لحد لينك تسجيل الدخول) تقريبًا
   static const double _designContentHeight = 760;
   static const double _pagePadding = 24;
 
@@ -77,12 +77,20 @@ class OnboardingViewBody extends StatelessWidget {
                             const SizedBox(height: 24),
                             CustomButtonField(
                               text: l10n.getStarted,
-                              onPressed: () {},
+                              onPressed: () => context
+                                  .read<OnboardingCubit>()
+                                  .completeOnboarding(
+                                    OnboardingDestination.register,
+                                  ),
                               icon: const Icon(Icons.arrow_back, size: 18),
                             ),
                             const SizedBox(height: 16),
                             TextButton(
-                              onPressed: () {},
+                              onPressed: () => context
+                                  .read<OnboardingCubit>()
+                                  .completeOnboarding(
+                                    OnboardingDestination.login,
+                                  ),
                               style: TextButton.styleFrom(
                                 padding: EdgeInsets.zero,
                                 minimumSize: Size.zero,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hoqooq/core/constants/app_colors.dart';
 import 'package:hoqooq/core/theme/app_text_styles.dart';
 
 class CustomButtonField extends StatelessWidget {
@@ -19,8 +20,8 @@ class CustomButtonField extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: const Color(0xFF202D3A),
-          foregroundColor: const Color(0xFFFFFFFF),
+          backgroundColor: AppColors.primary,
+          foregroundColor:AppColors.surface,
           elevation: 0,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
