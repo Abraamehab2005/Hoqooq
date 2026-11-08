@@ -279,6 +279,30 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'كلمة المرور لازم تكون 6 حروف على الأقل'**
   String get passwordTooShort;
+
+  /// No description provided for @errorInvalidCredentials.
+  ///
+  /// In ar, this message translates to:
+  /// **'الإيميل أو كلمة المرور غلط'**
+  String get errorInvalidCredentials;
+
+  /// No description provided for @errorNetwork.
+  ///
+  /// In ar, this message translates to:
+  /// **'مفيش اتصال بالإنترنت، جرّب تاني'**
+  String get errorNetwork;
+
+  /// No description provided for @errorTooManyRequests.
+  ///
+  /// In ar, this message translates to:
+  /// **'محاولات كتير، استنى شوية وجرّب تاني'**
+  String get errorTooManyRequests;
+
+  /// No description provided for @errorUnknown.
+  ///
+  /// In ar, this message translates to:
+  /// **'حصل خطأ غير متوقع، جرّب تاني'**
+  String get errorUnknown;
 }
 
 class _AppLocalizationsDelegate

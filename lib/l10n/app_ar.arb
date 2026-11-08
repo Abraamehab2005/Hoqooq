@@ -31,5 +31,9 @@
   "emailRequired": "اكتب بريدك الإلكتروني",
   "emailInvalid": "البريد الإلكتروني مش صحيح",
   "passwordRequired": "اكتب كلمة المرور",
-  "passwordTooShort": "كلمة المرور لازم تكون 6 حروف على الأقل"
+  "passwordTooShort": "كلمة المرور لازم تكون 6 حروف على الأقل",
+  "errorInvalidCredentials": "الإيميل أو كلمة المرور غلط",
+  "errorNetwork": "مفيش اتصال بالإنترنت، جرّب تاني",
+  "errorTooManyRequests": "محاولات كتير، استنى شوية وجرّب تاني",
+  "errorUnknown": "حصل خطأ غير متوقع، جرّب تاني"
 }

@@ -8,17 +8,19 @@ class CustomButtonField extends StatelessWidget {
     required this.text,
     required this.onPressed,
     this.icon,
+    this.isLoading = false,
   });
   final String text;
   final VoidCallback onPressed;
   final Widget? icon;
+  final bool isLoading;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       width: double.infinity,
       height: 54,
       child: ElevatedButton(
-        onPressed: onPressed,
+        onPressed: isLoading ? null : onPressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
           foregroundColor: AppColors.surface,

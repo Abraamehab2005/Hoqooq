@@ -106,4 +106,16 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get passwordTooShort => 'كلمة المرور لازم تكون 6 حروف على الأقل';
+
+  @override
+  String get errorInvalidCredentials => 'الإيميل أو كلمة المرور غلط';
+
+  @override
+  String get errorNetwork => 'مفيش اتصال بالإنترنت، جرّب تاني';
+
+  @override
+  String get errorTooManyRequests => 'محاولات كتير، استنى شوية وجرّب تاني';
+
+  @override
+  String get errorUnknown => 'حصل خطأ غير متوقع، جرّب تاني';
 }
