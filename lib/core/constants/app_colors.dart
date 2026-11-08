@@ -6,4 +6,6 @@ abstract class AppColors {
   static const Color accent = Color(0xFFA88755);
   static const Color secondaryText = Color(0xFF66717C);
   static const Color surface = Color(0xFFFFFFFF);
+  static const Color border = Color(0xFFE5E1DA);
+  static const Color error = Color(0xFFB42318);
 }

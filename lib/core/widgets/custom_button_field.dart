@@ -7,11 +7,11 @@ class CustomButtonField extends StatelessWidget {
     super.key,
     required this.text,
     required this.onPressed,
-    required this.icon,
+    this.icon,
   });
   final String text;
   final VoidCallback onPressed;
-  final Widget icon;
+  final Widget? icon;
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -21,7 +21,7 @@ class CustomButtonField extends StatelessWidget {
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
-          foregroundColor:AppColors.surface,
+          foregroundColor: AppColors.surface,
           elevation: 0,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(10),
@@ -33,8 +33,7 @@ class CustomButtonField extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Text(text, style: AppTextStyles.customButton),
-            const SizedBox(width: 10),
-            icon,
+            if (icon != null) ...[const SizedBox(width: 10), icon!],
           ],
         ),
       ),
