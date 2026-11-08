@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:hoqooq/core/constants/app_colors.dart';
+import 'package:hoqooq/core/routing/app_router.dart';
 import 'package:hoqooq/core/theme/app_text_styles.dart';
 import 'package:hoqooq/core/utils/responsive_spacing.dart';
 import 'package:hoqooq/core/utils/validators.dart';
@@ -7,9 +10,11 @@ import 'package:hoqooq/core/widgets/custom_button_field.dart';
 import 'package:hoqooq/core/widgets/custom_info_notice.dart';
 import 'package:hoqooq/core/widgets/custom_text_field.dart';
 import 'package:hoqooq/core/widgets/max_width_box.dart';
+import 'package:hoqooq/features/auth/presentation/view/utils/auth_error_message.dart';
 import 'package:hoqooq/features/auth/presentation/view/widgets/custom_auth_appbar.dart';
 import 'package:hoqooq/features/auth/presentation/view/widgets/custom_auth_icon.dart';
 import 'package:hoqooq/features/auth/presentation/view/widgets/custom_auth_title.dart';
+import 'package:hoqooq/features/auth/presentation/view_model/login_cubit/login_cubit.dart';
 import 'package:hoqooq/l10n/app_localizations.dart';
 
 class LoginViewBody extends StatefulWidget {
@@ -35,7 +40,10 @@ class _LoginViewBodyState extends State<LoginViewBody> {
   void _submit() {
     FocusScope.of(context).unfocus();
     if (!_formKey.currentState!.validate()) return;
-    // TODO: LoginCubit.login(email, password) بعد ما نعمله
+    context.read<LoginCubit>().login(
+      email: _emailController.text.trim(),
+      password: _passwordController.text.trim(),
+    );
   }
 
   @override
@@ -111,9 +119,27 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                         ),
                         SizedBox(height: context.gap(20)),
 
-                        CustomButtonField(
-                          text: l10n.loginButton,
-                          onPressed: _submit,
+                        BlocConsumer<LoginCubit, LoginState>(
+                          listener: (context, state) {
+                            if (state is LoginSuccess) {
+                              context.go(AppRouter.kHomeView);
+                            } else if (state is LoginFailure) {
+                              ScaffoldMessenger.of(context)
+                                ..hideCurrentSnackBar()
+                                ..showSnackBar(
+                                  SnackBar(
+                                    content: Text(state.error.message(l10n)),
+                                  ),
+                                );
+                            }
+                          },
+                          builder: (context, state) {
+                            return CustomButtonField(
+                              text: l10n.loginButton,
+                              onPressed: _submit,
+                              isLoading: state is LoginLoading,
+                            );
+                          },
                         ),
                         SizedBox(height: context.gap(28)),
 
