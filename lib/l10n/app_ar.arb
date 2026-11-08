@@ -18,5 +18,18 @@
   "onboardingChatTitle" : "اسأل بطريقتك",
   "onboardingChatDescription" : "احكي الموقف من غير أسماء أو بيانات شخصية حساسة.",
   "onboardingWarning" : "حقوق بيقدّم معلومات عامة، مش استشارة قانونية ولا بديل عن محامي مصري يراجع تفاصيل حالتك.",
-  "onboardingLogin" : "عندك حساب؟ تسجيل الدخول"
+  "onboardingLogin" : "عندك حساب؟ تسجيل الدخول",
+  "loginAppBar": "تسجيل الدخول",
+  "loginTitle": "أهلًا برجوعك",
+  "loginSubtitle": "كمّل أسئلتك وارجع لمحادثاتك، في مكان واحد.",
+  "emailLabel": "البريد الإلكتروني",
+  "passwordLabel": "كلمة المرور",
+  "forgotPassword": "نسيت كلمة المرور؟",
+  "loginButton": "دخول",
+  "noAccountRegister": "لسه معندكش حساب؟ إنشاء حساب جديد",
+  "loginPrivacyNotice": "حافظ على خصوصيتك: ما تشاركش بيانات حساسة أو مستندات شخصية في أسئلتك.",
+  "emailRequired": "اكتب بريدك الإلكتروني",
+  "emailInvalid": "البريد الإلكتروني مش صحيح",
+  "passwordRequired": "اكتب كلمة المرور",
+  "passwordTooShort": "كلمة المرور لازم تكون 6 حروف على الأقل"
 }

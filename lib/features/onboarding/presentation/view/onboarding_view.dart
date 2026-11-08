@@ -19,10 +19,10 @@ class OnboardingView extends StatelessWidget {
           if (state is OnboardingCompleted) {
             switch (state.destination) {
               case OnboardingDestination.register:
-              context.go(AppRouter.kHomeView);
+              context.go(AppRouter.kLoginView);
               case OnboardingDestination.login:
               // will change
-              context.go(AppRouter.kHomeView);
+              context.go(AppRouter.kLoginView);
             }
           }
         },

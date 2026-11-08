@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:hoqooq/features/auth/presentation/view/login_view.dart';
 import 'package:hoqooq/features/onboarding/presentation/view/onboarding_view.dart';
 import 'package:hoqooq/features/splash/presentation/view/splash_view.dart';
 
 abstract class AppRouter {
   static const kHomeView = '/homeView';
   static const kOnboardingView = '/onboardingView';
+  static const kLoginView = '/loginView';
   static final GoRouter router = GoRouter(
     routes: <RouteBase>[
       GoRoute(
@@ -21,8 +23,14 @@ abstract class AppRouter {
         },
       ),
       GoRoute(
+        path: kLoginView,
+        builder: (BuildContext context, GoRouterState state) {
+          return const LoginView();
+        },
+      ),
+      GoRoute(
         path: kHomeView,
-        builder: (context, state) =>
+        builder: (BuildContext context, state) =>
             const Scaffold(body: Center(child: Text('Home'))),
       ),
     ],

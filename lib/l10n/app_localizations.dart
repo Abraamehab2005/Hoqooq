@@ -201,6 +201,84 @@ abstract class AppLocalizations {
   /// In ar, this message translates to:
   /// **'عندك حساب؟ تسجيل الدخول'**
   String get onboardingLogin;
+
+  /// No description provided for @loginAppBar.
+  ///
+  /// In ar, this message translates to:
+  /// **'تسجيل الدخول'**
+  String get loginAppBar;
+
+  /// No description provided for @loginTitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'أهلًا برجوعك'**
+  String get loginTitle;
+
+  /// No description provided for @loginSubtitle.
+  ///
+  /// In ar, this message translates to:
+  /// **'كمّل أسئلتك وارجع لمحادثاتك، في مكان واحد.'**
+  String get loginSubtitle;
+
+  /// No description provided for @emailLabel.
+  ///
+  /// In ar, this message translates to:
+  /// **'البريد الإلكتروني'**
+  String get emailLabel;
+
+  /// No description provided for @passwordLabel.
+  ///
+  /// In ar, this message translates to:
+  /// **'كلمة المرور'**
+  String get passwordLabel;
+
+  /// No description provided for @forgotPassword.
+  ///
+  /// In ar, this message translates to:
+  /// **'نسيت كلمة المرور؟'**
+  String get forgotPassword;
+
+  /// No description provided for @loginButton.
+  ///
+  /// In ar, this message translates to:
+  /// **'دخول'**
+  String get loginButton;
+
+  /// No description provided for @noAccountRegister.
+  ///
+  /// In ar, this message translates to:
+  /// **'لسه معندكش حساب؟ إنشاء حساب جديد'**
+  String get noAccountRegister;
+
+  /// No description provided for @loginPrivacyNotice.
+  ///
+  /// In ar, this message translates to:
+  /// **'حافظ على خصوصيتك: ما تشاركش بيانات حساسة أو مستندات شخصية في أسئلتك.'**
+  String get loginPrivacyNotice;
+
+  /// No description provided for @emailRequired.
+  ///
+  /// In ar, this message translates to:
+  /// **'اكتب بريدك الإلكتروني'**
+  String get emailRequired;
+
+  /// No description provided for @emailInvalid.
+  ///
+  /// In ar, this message translates to:
+  /// **'البريد الإلكتروني مش صحيح'**
+  String get emailInvalid;
+
+  /// No description provided for @passwordRequired.
+  ///
+  /// In ar, this message translates to:
+  /// **'اكتب كلمة المرور'**
+  String get passwordRequired;
+
+  /// No description provided for @passwordTooShort.
+  ///
+  /// In ar, this message translates to:
+  /// **'كلمة المرور لازم تكون 6 حروف على الأقل'**
+  String get passwordTooShort;
 }
 
 class _AppLocalizationsDelegate

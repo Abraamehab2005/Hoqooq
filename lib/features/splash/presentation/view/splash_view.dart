@@ -21,7 +21,7 @@ class SplashView extends StatelessWidget {
               context.go(AppRouter.kOnboardingView);
             case SplashGoToLogin():
               // مؤقتًا لحد ما نعمل شاشة الـ login
-              context.go(AppRouter.kHomeView);
+              context.go(AppRouter.kLoginView);
             case SplashGoToHome():
               context.go(AppRouter.kHomeView);
             case SplashInitial():

@@ -66,4 +66,44 @@ class AppLocalizationsAr extends AppLocalizations {
 
   @override
   String get onboardingLogin => 'عندك حساب؟ تسجيل الدخول';
+
+  @override
+  String get loginAppBar => 'تسجيل الدخول';
+
+  @override
+  String get loginTitle => 'أهلًا برجوعك';
+
+  @override
+  String get loginSubtitle => 'كمّل أسئلتك وارجع لمحادثاتك، في مكان واحد.';
+
+  @override
+  String get emailLabel => 'البريد الإلكتروني';
+
+  @override
+  String get passwordLabel => 'كلمة المرور';
+
+  @override
+  String get forgotPassword => 'نسيت كلمة المرور؟';
+
+  @override
+  String get loginButton => 'دخول';
+
+  @override
+  String get noAccountRegister => 'لسه معندكش حساب؟ إنشاء حساب جديد';
+
+  @override
+  String get loginPrivacyNotice =>
+      'حافظ على خصوصيتك: ما تشاركش بيانات حساسة أو مستندات شخصية في أسئلتك.';
+
+  @override
+  String get emailRequired => 'اكتب بريدك الإلكتروني';
+
+  @override
+  String get emailInvalid => 'البريد الإلكتروني مش صحيح';
+
+  @override
+  String get passwordRequired => 'اكتب كلمة المرور';
+
+  @override
+  String get passwordTooShort => 'كلمة المرور لازم تكون 6 حروف على الأقل';
 }
